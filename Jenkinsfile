@@ -9,16 +9,10 @@ pipeline {
         }
     }
     
-    stage('Version Checking') {
-        steps {
-            sh "node --version"
-        }    
-    }
-    
-    
     stage("Testing...") {
         steps {
-            sh "node test/test.js"
+            echo "testing  process initiating..."
+            sh "npm test"
         }
     }
   }

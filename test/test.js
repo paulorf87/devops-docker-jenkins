@@ -1,8 +1,8 @@
-fetch("http://localhost:5000").then(d=>{
+fetch("http://localhost:5000").then(response=>{
     console.log({
-        status:d.status
+        status:response.status
     }); 
     return {
-        status:d.status
+        status:response.status
     }; 
 }).catch(err=>console.log(err)); 
